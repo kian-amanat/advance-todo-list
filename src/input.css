@@ -1,0 +1,175 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #efefef;
+    margin: 0;
+
+}
+
+button{
+    
+    background-color: #e53935;
+}
+
+.remove-btn{
+    margin-bottom: 20px;
+    padding: 8px 12px;        
+    background-color: #f44336; 
+    color: white;             
+    border: none;              
+    border-radius: 4px;      
+    cursor: pointer;          
+    font-size: 14px;           
+    transition: background-color 0.3s;
+}
+
+.remove-btn:hover {
+    background-color: #c9221f; 
+}
+
+input.compelete-btn {
+    width: 20px;             
+    height: 20px;             
+    cursor: pointer;          
+}
+
+
+button.main-btn{
+    margin-top: 10px;
+    height: 50px;
+    margin-left: 0px;
+    width: 700px;
+    
+}
+
+label{
+   margin-right: 310px;
+   margin-bottom: 10px;
+  
+}
+
+.title1{
+margin-left: -350px;
+}
+
+.title2{
+    margin-left: -300px;
+    }
+
+.todo-container {
+    max-width: 700px;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+h1.title{
+    margin-right: -50px;
+}
+
+.input input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.input input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.submit-button {
+    padding: 10px;
+    background-color: #39ca3e; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.task-list {
+    margin-top: 20px;
+}
+
+.task-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-item h2 {
+    margin-left: -70px;
+    font-size: 18px;
+    color: #333;
+}
+
+.task-item p {
+    /* margin-left:-150px ; */
+    color: #555;
+}
+
+.task-actions {
+    display: flex;
+    align-items: center;
+}
+
+.task-actions button {
+    padding: 6px 10px;
+    background-color: #f44336; /* Red color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.task-actions button:hover {
+    background-color: #e53935; /* Darker red on hover */
+}
+
+.task-actions input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.log-out {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #f44336; /* Red color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.log-out:hover {
+    background-color: #e53935; /* Darker red on hover */
+}

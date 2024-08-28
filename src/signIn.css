@@ -1,0 +1,92 @@
+.title{
+    font-size: 45px;
+    font-weight: 300;
+    margin-left: -70px;
+}
+
+  .error input {
+    border: 2px solid red; 
+    background-color: #ffffff; 
+  }
+
+.second-btn{
+    margin-right: -30px;
+    background-color: rgb(2, 115, 196);
+    margin-left: 150px;
+}
+
+.submit-btn{
+    margin-left: -15px;
+    background-color: rgb(38, 165, 6);
+}
+.second-btn:hover,  .logIn-btn:hover{
+    background-color: #007bff;
+}
+
+
+.logIn-btn{
+    background-color: rgb(2, 115, 196);
+    margin-left: 210px;
+    margin-right: -10px;
+}
+.card {
+    width: 360px; 
+    height: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-left: -3000px;
+    margin: 50px auto; 
+    margin-left: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+label{
+    font-weight: 600;
+    font-size: 14px;
+    padding-top: 21px;
+    margin-left: 0px;
+}
+
+
+.nameInput,
+.passwordInput {
+    width: 100%; 
+    padding: 10px;
+    margin: 10px 0; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.nameInput:focus,
+.passwordInput:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    margin-left: -30px;
+    margin-top: 30px;
+    padding: 10px 15px;
+    background-color: #01b419; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #04c911; /* Darker shade on hover */
+}
+
+.para-error{
+    color : rgb(215, 9, 9);
+    font-weight: 300;
+}
