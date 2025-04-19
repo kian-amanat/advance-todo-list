@@ -1,92 +1,158 @@
-.title{
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title {
+    color: #ffffff;
     font-size: 45px;
     font-weight: 300;
-    margin-left: -70px;
-}
-
-  .error input {
-    border: 2px solid red; 
-    background-color: #ffffff; 
+    text-align: center;
+    margin-bottom: 20px;
   }
-
-.second-btn{
-    margin-right: -30px;
-    background-color: rgb(2, 115, 196);
-    margin-left: 150px;
-}
-
-.submit-btn{
-    margin-left: -15px;
-    background-color: rgb(38, 165, 6);
-}
-.second-btn:hover,  .logIn-btn:hover{
-    background-color: #007bff;
-}
-
-
-.logIn-btn{
-    background-color: rgb(2, 115, 196);
-    margin-left: 210px;
-    margin-right: -10px;
-}
-.card {
-    width: 360px; 
-    height: 300px;
-    padding: 20px;
-    border-radius: 10px;
+  
+  .error input {
+    border: 2px solid red;
     background-color: #ffffff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-left: -3000px;
-    margin: 50px auto; 
-    margin-left: 420px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-}
-
-label{
-    font-weight: 600;
+  }
+  
+  .card {
+    max-width: 90%;
+    width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    margin: auto;
+    height: auto;
+  }
+  
+  label {
+    font-weight: 300;
     font-size: 14px;
-    padding-top: 21px;
-    margin-left: 0px;
-}
-
-
-.nameInput,
-.passwordInput {
-    width: 100%; 
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    text-align: left;
+  }
+  
+  .nameInput,
+  .passwordInput {
+    width: 90%;
     padding: 10px;
-    margin: 10px 0; 
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
     transition: border-color 0.3s;
-}
-
-.nameInput:focus,
-.passwordInput:focus {
-    border-color: #007bff; /* Change border color on focus */
-    outline: none; /* Remove default outline */
-}
-
-button {
-    margin-left: -30px;
-    margin-top: 30px;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .passwordInput {
+    margin-bottom: 30px;
+  }
+  
+  .nameInput:focus,
+  .passwordInput:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  button {
+    display: block;
+    width: 95%;
+    margin: 20px auto 0 auto;
     padding: 10px 15px;
-    background-color: #01b419; /* Bootstrap primary color */
+    background-color: #6f42c1;
     color: white;
     border: none;
+    height: 50px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #04c911; /* Darker shade on hover */
-}
-
-.para-error{
-    color : rgb(215, 9, 9);
+  }
+  
+  button:hover,
+  .second-btn:hover,
+  .logIn-btn:hover {
+    background-color: #007bff;
+  }
+  
+  .submit-btn {
+    background-color: #6f42c1;
+  }
+  
+  .second-btn {
+    background-color: rgb(7, 139, 234);
+  }
+  
+  .logIn-btn {
+    background-color: rgb(2, 115, 196);
+  }
+  
+  .para-error {
+    color: rgb(215, 9, 9);
     font-weight: 300;
-}
+    text-align: center;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .title {
+      font-size: 32px;
+    }
+  
+    .card {
+      padding: 15px;
+      width: 95%;
+      margin: 20px;
+    }
+  
+    button {
+      font-size: 15px;
+      height: 45px;
+    }
+  
+    .nameInput,
+    .passwordInput {
+      font-size: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .title {
+      font-size: 28px;
+    }
+  
+    .card {
+      padding: 10px;
+    }
+  
+    label {
+      font-size: 13px;
+      margin-left: 10px;
+    }
+  
+    button {
+      font-size: 14px;
+      height: 42px;
+    }
+  
+    .nameInput,
+    .passwordInput {
+      font-size: 14px;
+    }
+  }
+  

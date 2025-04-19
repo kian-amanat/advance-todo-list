@@ -61,7 +61,7 @@ export const updatefetchData = async (
   descriptionVal,
   isComplete
 ) => {
-  console.log("comp =>>>>", isComplete.current);
+  console.log("comp =>>>>", isComplete);
   let newInput = inputVal; // Replace with the appropriate method to select the div
   let newDescription = descriptionVal;
 

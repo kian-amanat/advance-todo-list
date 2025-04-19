@@ -108,62 +108,70 @@ function InputField ({setAccess}){
 
     return (
         <>
-            <div className="todo-container">
-            <h1 className="title">Todo List</h1>
-            <div className='input'>
-            <label className="title1">
-    Title
-    </label>
-                <input
-                    type="text"
-                    ref={inputVal}
-                    placeholder={error ? "Fill the blank" : "Type something..."}
-                    className={error ? 'error' : ''}
-                />
-                  <label className="title2">
-    Description
-    </label>
-                <input
-                    type="text"
-                    ref={descriptionVal}
-                    placeholder={error ? "Fill the blank" : "Type your description..."}
-                    className={error ? 'error' : ''}
-                />
-                <button className="main-btn" onClick={onChangeHandler}>Submit</button>
+          <div className="todo-container">
+      
+            {/* <h1 className="title">Todo List</h1> */}
+      
+            <div className="input">
+              <label className="title1">Title</label>
+              <input
+                type="text"
+                ref={inputVal}
+                placeholder={error ? "Fill the blank" : "Type something..."}
+                className={error ? 'error' : ''}
+              />
+              <label className="title2">Description</label>
+              <input
+                type="text"
+                ref={descriptionVal}
+                placeholder={error ? "Fill the blank" : "Type your description..."}
+                className={error ? 'error' : ''}
+              />
+              <button className="main-btn" onClick={onChangeHandler}>Submit</button>
             </div>
-            <div className='task-list'>
-
-{/* show task when is created */}
-                
-            {inputs.map((input, index) => (
-                <div key={index} className='task-item'>
-                    <input type="checkbox" className="compelete-btn" onClick={() => completeTaskEvent(index)} />
+      
+            <div className="task-list">
+              {/* show task when is created */}
+              {inputs.map((input, index) => (
+                <div key={index} className="task-item">
+                  <input
+                    type="checkbox"
+                    className="compelete-btn"
+                    onClick={() => completeTaskEvent(index)}
+                  />
+                  <div className="task-details">
                     <h2>{input}</h2>
                     {des[index] && <p>{des[index]}</p>}
-                    <p>{isComplete.current ? 'Completed' : ' Not compelet'}</p>
-                    {console.log("value of compelete =>" , isComplete.current)}
-                    <button className="remove-btn" onClick={() => removeTaskEvent(index)}>Remove</button>
+                    <p>{isComplete.current ? 'Completed' : 'Not complete'}</p>
+                  </div>
+                  <button className="remove-btn" onClick={() => removeTaskEvent(index)}>Remove</button>
                 </div>
-            ))}
-
-
-{/* get task with query and show it */}
-            {tasks.map((task ) => (
-                <div key={task.id} className='task-item'>
-                    <input type="checkbox" className="compelete-btn" onClick={() => completeTaskEvent(task.id, task.title , task.description , isComplete)} />
+              ))}
+      
+              {/* get task with query and show it */}
+              {tasks.map((task) => (
+                <div key={task.id} className="task-item">
+                  <input
+                    type="checkbox"
+                    className="compelete-btn"
+                    onClick={() =>
+                      completeTaskEvent(task.id, task.title, task.description, isComplete)
+                    }
+                  />
+                  <div className="task-details">
                     <h2>{task.title}</h2>
                     {task.description && <p>{task.description}</p>}
-                    <p>{task.is_completed ? "Completed" : 'Not compelet'}</p>
-                    {/* {console.log("value of compelete =>" , isComplete.current)} */}
-                    <button className="remove-btn" onClick={() => removeTaskEvent(task.id, false)}>Remove</button>
+                    <p>{task.is_completed ? 'Completed' : 'Not complete'}</p>
+                  </div>
+                  <button className="remove-btn" onClick={() => removeTaskEvent(task.id, false)}>Remove</button>
                 </div>
-            ))}
-        </div>
-
+              ))}
+            </div>
             <button className="log-out" onClick={logOutonClick}>Log Out</button>
-        </div>
+          </div>
         </>
-    );
+      );
+      
 };
 
 export { InputField };

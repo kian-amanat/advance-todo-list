@@ -34,9 +34,8 @@ function SignInPage({setAccess , className}){
     return(
         <>
         <div className={className}>
-        <h1 className="title">Create Account</h1>
-
         <div className="card">
+        <h1 className="title">Create Account</h1>
         <label>
    Username
    </label>

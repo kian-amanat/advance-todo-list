@@ -66,7 +66,6 @@ export async function logInUserData(firstName, lastName) {
 
     try {
       localStorage.removeItem("jwt");
-
       const jwtToken = localStorage.getItem("jwt");
 
       const response = await fetch("http://localhost:3001/signIn", {

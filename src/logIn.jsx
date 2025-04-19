@@ -1,8 +1,9 @@
 import "./signIn.css"
 import React, { useRef, useState } from 'react';
 import { logInUserData } from "./createUser.js";
-
 let changePage = false;
+
+
 function LogInPage({setAccess ,  className }){
     const [fill , setFill] = useState(false)
     const [tasks, setTasks] = useState([]);
@@ -34,9 +35,9 @@ setAccess(4)
     return(
         <>
          <div className={className}>
-<h1 className="title">Log in</h1>
 
         <div className="card" >
+        <h1 className="title">LOG IN</h1>
         <label>
    Username
    </label>
